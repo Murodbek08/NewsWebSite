@@ -7,6 +7,7 @@ const request = axios.create({
   baseURL: BASEURL,
   headers: {
     "x-api-key": API_KEY,
+    "x-requested-with": "xhr",
   },
 });
 export default request;
