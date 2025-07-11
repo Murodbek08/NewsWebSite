@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const BASEURL = "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2";
-const API_KEY = "edfb628062cf4234ba00dbdbce7898fb";
+const BASEURL = "https://gnews.io/api/v4/";
+const API_KEY = "6e981fac6e2676d087cc37d6d2d3c699";
 
 const request = axios.create({
   baseURL: BASEURL,

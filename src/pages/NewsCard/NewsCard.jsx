@@ -16,7 +16,7 @@ export class NewsCard extends Component {
       pageName = "general";
     }
     try {
-      let { data } = await request(`top-headlines?category=${pageName}`);
+      let { data } = await request(`top-headlines?topic=${pageName}`);
       this.setState({
         data: data.articles.find(
           (el) => new Date(el.publishedAt).getTime() == id

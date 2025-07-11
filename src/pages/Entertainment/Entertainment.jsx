@@ -21,7 +21,7 @@ export class Entertainment extends Component {
     this.setState({ loading: true });
     try {
       let { data } = await request(
-        `top-headlines?category=entertainment&q=${this.state.search}&pageSize=${this.state.pageSize}&page=${this.state.page}`
+        `top-headlines?topic=entertainment&q=${this.state.search}&max=${this.state.pageSize}&page=${this.state.page}`
       );
       const pageCount = Math.ceil(data.totalResults / this.state.pageSize);
       this.setState({ data: data.articles, total: pageCount });
